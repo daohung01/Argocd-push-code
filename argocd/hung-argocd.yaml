@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: container-nginx
-        image: repository.vnpt.vn/hungd/nginx:15
+        image: repository.vnpt.vn/hungd/nginx:latest
         resources:
           limits:
             memory: "128Mi"
