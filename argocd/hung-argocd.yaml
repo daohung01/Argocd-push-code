@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  namespace: hung-argocd
 spec:
   replicas: 3
   selector:
@@ -26,7 +25,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: hung-argocd
   name: service
 spec:
   type: NodePort
